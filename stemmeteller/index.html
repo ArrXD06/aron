@@ -1,0 +1,41 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Stemme</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>komunevalg 2024</h1>
+        <div>
+            <canvas id="myChart"></canvas>
+          </div>
+        <div class="buttons">
+            <button onclick="valgStemme('AR')">AP</button>
+            <button onclick="valgStemme('HR')">H</button>
+            <button onclick="valgStemme('SR')">SP</button>
+            <button onclick="valgStemme('FRPR')">FRP</button>
+         </div>
+
+        
+
+        <div class="resultat">
+            <p>Resultat for AP: <span id="resultaterAp"></span></p>
+            <p>Resultat for H: <span id="resultaterH"></span></p>
+            <p>Resultat for SP: <span id="resultaterSP"></span></p>
+            <p>Resultat for FRP: <span id="resultaterFRP"></span></p>
+        </div>
+        
+        <div class="reset-button">
+         <button id="reset-button">Reset</button>
+        </div>
+
+        
+          
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          
+
+        <script src="index.js"></script>
+    </body>
+</html>
